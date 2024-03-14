@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return(
@@ -10,11 +10,23 @@ function Navbar() {
             <img src="./src/assets/navbar/analitica.png" />
             
           </div>
-          <div className="icon i-2"><img src="./src/assets/navbar/plano.png" /></div>
-          <div className="icon i-3"><img src="./src/assets/navbar/reserva.png" /></div>
-        </div>
+          <div className="icon i-2">
+           
+            <img src="./src/assets/navbar/plano.png" />
+            
+            </div>
+          <div className="icon i-3">
+            <Link to="/about">
+            <img src="./src/assets/navbar/reserva.png" />
+            </Link>
+            </div>
+          </div>
         <div className="navbar-middle">
-          <div className="icon i-4"><img src="./src/assets/navbar/hogar.png" /></div>
+          <div className="icon i-4">
+            <Link to="/">
+            <img src="./src/assets/navbar/hogar.png" />
+            </Link>
+            </div>
         </div>
         <div className="navbar-right">
           <div className="icon i-5"><img src="./src/assets/navbar/glass.png" />

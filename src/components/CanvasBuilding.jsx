@@ -1,24 +1,24 @@
 import { Canvas } from "@react-three/fiber";
-import { Experience } from "./Experience";
+import { ExperienceBuilding } from "./ExperiencieBuilding";
 import {Suspense} from "react";
 import { Physics } from "@react-three/rapier";
 import Navbar from "./navbar"
 import '../index.css'
 
-function CanvasP() {
+function CanvasBuilding() {
   return (
     <>
     <Navbar />
-
-    <div className="Canvas-container">
-      <h1>Elige tu espacio</h1>
-      <div>
-    <Canvas style={{ width: "70vw", height: "65vh" }} shadows camera={{ position: [-40, 15, 0], fov: 35 }}>
+    <div className="Canvas-container-building">
+        <h1>Comienza tu reserva</h1>
+    <div className="">
+   
+    <Canvas style={{ width: "70vw", height: "70vh" }} shadows camera={{ position: [-40, 15, 0], fov: 35 }}>
       <color attach="background" args={["#dbecfb"]} />
       <fog attach="fog" args={["#dbecfb,30,40"]} />
       <Suspense>
         <Physics debug>
-        <Experience />
+        <ExperienceBuilding />
         </Physics>
       </Suspense>
     </Canvas>
@@ -28,4 +28,4 @@ function CanvasP() {
   );
 }
 
-export default CanvasP;
+export default CanvasBuilding;
