@@ -1,12 +1,17 @@
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./components/Experience";
+import {Suspense} from "react";
+import { Physics } from "@react-three/rapier";
+import Navbar from "./components/navbar"
+import CanvasP from "./components/Canvas";
+import './index.css'
 
 function App() {
   return (
-    <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
-      <color attach="background" args={["#ececec"]} />
-      <Experience />
-    </Canvas>
+    <>
+   <Navbar />
+   <CanvasP />
+    </>
   );
 }
 

@@ -1,8 +1,196 @@
 #root {
   width: 100vw;
   height: 100vh;
+  
 }
 
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #dbecfb;
+
+}
+
+canvas{
+  background-image: linear-gradient(0deg, #11113A 0%, #97d9e1 70%, #11113A 100%);
+}
+
+.Canvas-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  background-color: #11113A;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 20px;
+}
+
+.icon img{
+  width: 25px;
+}
+
+.i-3 img{
+  width: 35px;
+}
+
+.i-5 img{
+  margin-right: -5px;
+  z-index: 1;
+}
+.i-5{
+  display: flex;
+  align-items: center;
+  
+}
+
+.busqueda{
+  background-color: rgba(217, 217, 217, 0.15);
+  height: 30px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+
+}
+
+.busqueda p{
+  font-size: 0.9rem;
+}
+
+.gadgets{
+  display: flex;
+  align-items: center;
+}
+
+.Individual-gadget{
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Individual-gadget input{
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border:0;
+  
+  background-color: rgba(150, 162, 226, 0.8);
+}
+.Individual-gadget img{
+    width: 60px;
+    height: 50px;
+    margin: 5px auto;
+}
+
+label{
+  display: block;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.Individual-gadget label{
+  margin: 0 auto;
+}
+
+.horas{
+  width: 100%;
+  display: flex;
+}
+
+.v-m{
+  margin: 25px 0;
+}
+
+.Container-popup{
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(10, 21, 73, 0.7);
+  color: white;
+}
+
+.fecha{
+  text-align: left;
+  padding-left: 40px;
+}
+
+.fecha input{
+  width: 150px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  border:0;
+  margin-top: 5px;
+  background-color:  rgba(150, 162, 226, 0.8);
+}
+
+.horas{
+  padding-left: 40px;
+  text-align: left;
+}
+
+.hora input{
+  width: 150px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  border:0;
+  margin-top: 5px;
+  background-color: rgba(150, 162, 226, 0.8);
+}
+
+.hora{
+  margin-right: 40px;
+}
+
+button{
+  width: 100px;
+  height: 35px;
+  border: 0;
+  margin: 5px 10px;
+  margin-bottom: 0;
+  background-color:  rgba(20, 51, 230, 0.8);
+  border-radius: 5px;
+  color: white;
 }
